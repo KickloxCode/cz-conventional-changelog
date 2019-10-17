@@ -1,6 +1,6 @@
 {
   "name": "@kicklox/cz-conventional-changelog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Commitizen adapter following the conventional-changelog format.",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   "homepage": "https://github.com/KickloxCode/cz-conventional-changelog",
   "repository": {
     "type": "git",
-    "url": "https://github.com/KickloxCode/cz-conventional-changelog.git"
+    "url": "git+https://github.com/KickloxCode/cz-conventional-changelog.git"
   },
   "engineStrict": true,
   "engines": {
@@ -25,7 +25,8 @@
     "lodash.map": "^4.5.1",
     "longest": "^2.0.1",
     "right-pad": "^1.0.1",
-    "word-wrap": "^1.0.3"
+    "word-wrap": "^1.0.3",
+    "@commitlint/load": ">6.1.1"
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",
@@ -45,5 +46,9 @@
     "commitizen": {
       "path": "./index.js"
     }
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/KickloxCode/cz-conventional-changelog/issues"
+  },
+  "license": "ISC"
 }
