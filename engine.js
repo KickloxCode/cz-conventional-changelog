@@ -77,6 +77,14 @@ module.exports = function(options) {
           default: options.defaultType
         },
         {
+          type: 'list',
+          name: 'tenant',
+          message:
+            'Which tenant is concerned: (press enter to skip)',
+          choices: options.tenants,
+          default: ''
+        },
+        {
           type: 'input',
           name: 'scope',
           message:
@@ -198,8 +206,11 @@ module.exports = function(options) {
         // parentheses are only needed when a scope is present
         var scope = answers.scope ? '(' + answers.scope + ')' : '';
 
+        // braces are only needed when a scope is present
+        var tenant = answers.tenant ? '[' + answers.tenant + ']' : '';
+
         // Hard limit this line in the validate
-        var head = answers.type + scope + ': ' + answers.subject;
+        var head = answers.type + tenant + scope + ': ' + answers.subject;
 
         // Wrap these lines at options.maxLineWidth characters
         var body = answers.body ? wrap(answers.body, wrapOptions) : false;
