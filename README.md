@@ -1,7 +1,7 @@
 # @kicklox/cz-conventional-changelog
 
 Status:
-[![npm version](https://img.shields.io/npm/v/cz-conventional-changelog.svg?style=flat-square)](https://www.npmjs.org/package/cz-conventional-changelog-kicklox)
+[![npm version](https://img.shields.io/npm/v/@kicklox/cz-conventional-changelog.svg?style=flat-square)](https://www.npmjs.org/package/cz-conventional-changelog-kicklox)
 
 Fork of the [cz-conventional-changelog](https://github.com/commitizen/cz-conventional-changelog) from [commitizen](https://github.com/commitizen/cz-cli), adapted to Kicklox needs.
 Prompts for [conventional changelog](https://github.com/conventional-changelog/conventional-changelog) standard.
